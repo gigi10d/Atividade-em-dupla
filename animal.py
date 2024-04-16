@@ -9,7 +9,7 @@ class Animal:
         print(f"o animal{self.nome}da especie {self.especie}tem {self.idade} anos de idade")
 if __name__=="__main__":
     animal= Animal("fido", "5", "cachorro")
-    animal.emetir()
+    animal.emitir()
     animal.informacao()
 
     
