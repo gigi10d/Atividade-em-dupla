@@ -11,5 +11,3 @@ if __name__=="__main__":
     animal= Animal("fido", "5", "cachorro")
     animal.emitir()
     animal.informacao()
-
-    
