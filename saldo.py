@@ -1,19 +1,19 @@
 class Conta():
-    def __init__(self, numero, titular, saldo):
-        self.numero = numero
-        self.titular = titular
-        self.saldo = saldo
+    def __init__(self, _numeros, _titular, __saldo):
+        self._numeros = _numeros
+        self._titular = _titular
+        self.__saldo = __saldo
     def depositar(self, valor):
-        self.saldo += valor
-        print(f"o salvo atual de conta {self.numero} e de r$ {self.saldo}")
+        self.__saldo += valor
+        print(f"o salvo atual de conta {self._numeros} e de r$ {self.__saldo}")
     def sacar(self, valor):
-        if self.saldo >= valor:
-            self.saldo -= valor
-            print(f"o saldo atual de conta {self.numero} e de R$ {self.saldo}")
+        if self.__saldo >= valor:
+            self.__saldo -= valor
+            print(f"o __saldo atual de conta {self._numeros} e de R$ {self.__saldo}")
         else:
-            print("saldo insuficiente")
+            print("__saldo insuficiente")
     def mostrar(self):
-        print(f"o saldo atual da conta {self.numero} e de R$ {self.saldo}")
+        print(f"o saldo atual da conta {self._numeros} e de R$ {self.__saldo}")
 if __name__ == "__main__":
     conta1 = Conta(1234, "edril", 1000)
     conta1.depositar(1240)
